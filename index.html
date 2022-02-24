@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG用語　メモ帳</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- INPUT SECTION -->
+    <section id="input-section">
+      <input
+        type="text"
+        placeholder="Input Term and Description"
+        id="desc-el"
+      />
+      <input type="text" placeholder="Input URL" id="url-el" />
+    </section>
+    <section id="btn-section">
+      <div>
+        <!-- SAVE BUTTON -->
+        <button id="save-btn">SAVE</button>
+
+        <!-- SORT ELEMENTS-->
+        <select name="sort" id="sort-el" title="Sort">
+          <option value="select">--Sort--</option>
+          <option value="alphabetically">A to Z</option>
+          <option value="by-date">by Date</option>
+        </select>
+
+        <!-- SEARCH ELEMENTS-->
+        <div class="search-container">
+          <span id="search-btn" class="active">
+            <img src="img/search.png" title="Search" />
+          </span>
+          <span id="close-btn">
+            <img src="img/close.png" title="End search" />
+          </span>
+          <input type="text" id="search-input" placeholder="Search" />
+        </div>
+
+        <!-- EDIT ELEMENTS -->
+        <button id="update-btn" title="Save your changes">UPDATE</button>
+        <button id="cancel-btn">CANCEL</button>
+      </div>
+
+      <!-- DELETE ALL BUTTON -->
+      <button id="delete-all-btn" title="Double click to delete all">
+        DELETE ALL
+      </button>
+    </section>
+
+    <!-- FOLDER CONTENTS SECTION -->
+    <div id="folder-contents-section">
+      <!-- <ul id="html" class="content active">
+      <li>
+        <a href="#"></a>
+        <button class="dropdown-btn">
+          <img src="">
+        </button>
+        <div class="dropdown-contents">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </li>
+    </ul>
+    <ul id="css" class="content"></ul>
+    <ul id="js" class="content"></ul> -->
+
+      <!-- SEARCH RESULTS SECTION -->
+      <div id="search-results-container">
+        <p id="search-title">SEARCH RESULTS</p>
+        <ul id="search-results" class="content active">
+          <!-- <li>
+            <a href="#"></a>
+            <button class="dropdown-btn">
+              <img src="">
+            </button>
+            <div class="dropdown-contents">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </li> -->
+        </ul>
+        <p id="number-of-matches">1 terms found</p>
+      </div>
+    </div>
+
+    <!-- DROPDOWN CONTENTS -->
+    <ul id="dropdown-contents">
+      <li id="edit-btn"><img src="img/edit.png" />Edit</li>
+      <li id="move-to-btn">
+        <img src="img/moveto.png" />Move to...
+        <ul id="move-to-submenu">
+          <!-- <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li> -->
+        </ul>
+      </li>
+      <hr />
+      <li>
+        <a href="#" id="delete-btn"><img src="img/delete.png" />Delete</a>
+      </li>
+    </ul>
+
+    <!-- FOLDER TABS -->
+    <ul id="folder-tabs">
+      <!-- <li class="active" data-id="html">HTML</li>
+    <li data-id="css">CSS</li>
+    <li data-id="js">JS</li>
+    <li id="new-folder-btn">+</li> -->
+    </ul>
+
+    <!-- POPUP MESSAGE -->
+    <div id="popup"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

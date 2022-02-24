@@ -3,6 +3,7 @@
   "version": "1.0",
   "author": "AH",
   "name": "PG用語　メモ帳",
+  "icons": { "64": "img/exticon.png" },
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"
